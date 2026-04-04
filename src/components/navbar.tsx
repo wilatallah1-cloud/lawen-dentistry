@@ -48,7 +48,6 @@ function DesktopDropdown({
   label,
   links,
   scrolled,
-  icon: Icon,
 }: {
   label: string;
   links: { label: string; href: string }[];
@@ -70,11 +69,10 @@ function DesktopDropdown({
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className={`flex items-center gap-1 px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-300 hover:text-gold ${
+        className={`flex items-center gap-1 px-2.5 py-2 text-[13px] font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
           scrolled ? "text-navy/70" : "text-white/80"
         }`}
       >
-        {Icon && <Icon className="w-3.5 h-3.5" />}
         {label}
         <ChevronDown className={`w-3 h-3 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
@@ -199,85 +197,65 @@ export function Navbar() {
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-0.5">
-              <Link
-                href="/"
-                className={`px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-300 hover:text-gold ${
-                  scrolled ? "text-navy/70" : "text-white/80"
-                }`}
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className={`px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-300 hover:text-gold ${
-                  scrolled ? "text-navy/70" : "text-white/80"
-                }`}
-              >
-                About
-              </Link>
+            <nav className="hidden xl:flex items-center gap-0">
+              {[
+                { label: "Home", href: "/" },
+                { label: "About", href: "/about" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`px-2.5 py-2 text-[13px] font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
+                    scrolled ? "text-navy/70" : "text-white/80"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
               <DesktopDropdown
-                label="Medical Aesthetic"
-                links={[...aestheticLinks, { label: "─── Sexual Health ───", href: "#" }, ...sexualHealthLinks]}
+                label="Aesthetic"
+                links={[...aestheticLinks, { label: "── Sexual Health ──", href: "#" }, ...sexualHealthLinks]}
                 scrolled={scrolled}
-                icon={Sparkles}
               />
               <DesktopDropdown
-                label="Medical Services"
+                label="Services"
                 links={medicalLinks}
                 scrolled={scrolled}
-                icon={Stethoscope}
               />
-              <Link
-                href="/pricing"
-                className={`px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-300 hover:text-gold ${
-                  scrolled ? "text-navy/70" : "text-white/80"
-                }`}
-              >
-                Pricing
-              </Link>
-              <Link
-                href="/promotions"
-                className={`px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-300 hover:text-gold ${
-                  scrolled ? "text-navy/70" : "text-white/80"
-                }`}
-              >
-                Promotions
-              </Link>
-              <Link
-                href="/faq"
-                className={`px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-300 hover:text-gold ${
-                  scrolled ? "text-navy/70" : "text-white/80"
-                }`}
-              >
-                FAQ
-              </Link>
-              <Link
-                href="/contact"
-                className={`px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-300 hover:text-gold ${
-                  scrolled ? "text-navy/70" : "text-white/80"
-                }`}
-              >
-                Contact
-              </Link>
+              {[
+                { label: "Pricing", href: "/pricing" },
+                { label: "Promotions", href: "/promotions" },
+                { label: "FAQ", href: "/faq" },
+                { label: "Contact", href: "/contact" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`px-2.5 py-2 text-[13px] font-medium whitespace-nowrap transition-colors duration-300 hover:text-gold ${
+                    scrolled ? "text-navy/70" : "text-white/80"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
 
             {/* Desktop CTA */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden xl:flex items-center gap-3">
               <Link
                 href="tel:+15145003422"
-                className={`flex items-center gap-2 text-sm transition-colors duration-300 ${
+                className={`flex items-center gap-1.5 text-[13px] transition-colors duration-300 ${
                   scrolled ? "text-navy" : "text-white"
                 }`}
               >
-                <Phone className="w-4 h-4" />
-                <span className="hidden xl:inline">(514) 500-3422</span>
+                <Phone className="w-3.5 h-3.5" />
+                <span className="hidden 2xl:inline">(514) 500-3422</span>
               </Link>
               <Link
                 href="/contact"
-                className="flex items-center gap-2 bg-gold hover:bg-gold-light text-navy px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
+                className="flex items-center gap-1.5 bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-full text-[13px] font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
               >
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-3.5 h-3.5" />
                 Book Now
               </Link>
             </div>
@@ -285,7 +263,7 @@ export function Navbar() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className={`lg:hidden p-2 transition-colors ${
+              className={`xl:hidden p-2 transition-colors ${
                 scrolled ? "text-navy" : "text-white"
               }`}
             >
@@ -303,7 +281,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-navy pt-24 px-6 overflow-y-auto lg:hidden pb-32"
+            className="fixed inset-0 z-40 bg-navy pt-24 px-6 overflow-y-auto xl:hidden pb-32"
           >
             <nav className="flex flex-col">
               <Link href="/" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
@@ -350,7 +328,7 @@ export function Navbar() {
       </AnimatePresence>
 
       {/* Mobile Bottom Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-navy/95 backdrop-blur-md border-t border-white/10">
+      <div className="fixed bottom-0 left-0 right-0 z-50 xl:hidden bg-navy/95 backdrop-blur-md border-t border-white/10">
         <div className="grid grid-cols-3 divide-x divide-white/10">
           <Link
             href="tel:+15145003422"
