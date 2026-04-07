@@ -17,7 +17,7 @@ export function DoctorSection() {
               {/* Image */}
               <div className="relative h-[400px] md:h-[520px]">
                 <div
-                  className="absolute inset-0 bg-cover bg-top"
+                  className="absolute inset-0 bg-cover bg-[center_20%]"
                   style={{
                     backgroundImage:
                       "url('/dr-lawen.webp')",
@@ -83,8 +83,12 @@ export function DoctorSection() {
         <FadeIn delay={0.3}>
           <div className="relative rounded-2xl overflow-hidden bg-navy-dark/80 shadow-lg p-8 md:p-10">
             <div className="flex flex-col md:flex-row items-start gap-6">
-              <div className="w-20 h-20 rounded-2xl bg-gold/10 flex items-center justify-center flex-shrink-0">
-                <span className="font-heading text-2xl font-bold text-gold">SK</span>
+              <div className="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                <img
+                  src="/dr-kottapalli.webp"
+                  alt="Dr. Saud Kottapalli, DDS"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <div className="w-10 h-px bg-gold mb-4" />
