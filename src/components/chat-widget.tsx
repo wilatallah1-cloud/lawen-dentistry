@@ -26,7 +26,7 @@ export function ChatWidget() {
       `}</style>
       <VapiWidget
         publicKey="64beed82-5806-471a-b426-27eb647ef69e"
-        assistantId="27bb82b4-2cf0-4040-a0ed-ac0f8e46adaa"
+        assistantId="c908d00a-1735-4b96-993c-dad58aeac350"
         mode="chat"
         theme="light"
         position="bottom-right"
@@ -37,9 +37,9 @@ export function ChatWidget() {
         ctaButtonTextColor="#1B2A4A"
         baseBgColor="#FAF8F5"
         title="Lawen Dentistry"
-        chatFirstMessage="Hello! Welcome to Lawen Dentistry — your Halifax dental care team. How can we help you today? / Bonjour! Bienvenue chez Lawen Dentistry. Comment puis-je vous aider aujourd'hui?"
-        chatPlaceholder="Tapez votre message... / Type your message..."
-        chatEmptyMessage="Commencez une conversation / Start a conversation"
+        chatFirstMessage="Hello! Welcome to Lawen Dentistry — your Halifax dental care team. How can we help you today?"
+        chatPlaceholder="Type your message..."
+        chatEmptyMessage="Start a conversation"
       />
     </>
   );

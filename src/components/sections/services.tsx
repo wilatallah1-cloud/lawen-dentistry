@@ -28,7 +28,7 @@ export function ServicesSection() {
       price: "Diamond+ Provider",
       color: "from-blue-50 to-blue-100/50",
       iconBg: "bg-blue-100 text-blue-700",
-      href: "/cosmetic-dentistry",
+      href: "#",
     },
     {
       icon: Sparkles,
@@ -37,7 +37,7 @@ export function ServicesSection() {
       price: t.services.consultation,
       color: "from-amber-50 to-yellow-50",
       iconBg: "bg-amber-100 text-amber-700",
-      href: "/cosmetic-dentistry/whitening",
+      href: "#",
     },
     {
       icon: Wrench,
@@ -46,7 +46,7 @@ export function ServicesSection() {
       price: t.services.consultation,
       color: "from-green-50 to-emerald-50",
       iconBg: "bg-green-100 text-green-700",
-      href: "/general-dentistry",
+      href: "#",
     },
     {
       icon: Moon,
@@ -55,7 +55,7 @@ export function ServicesSection() {
       price: t.services.consultation,
       color: "from-purple-50 to-violet-50",
       iconBg: "bg-purple-100 text-purple-700",
-      href: "/general-dentistry/sedation",
+      href: "#",
     },
     {
       icon: Baby,
@@ -64,7 +64,7 @@ export function ServicesSection() {
       price: t.services.consultation,
       color: "from-teal-50 to-cyan-50",
       iconBg: "bg-teal-100 text-teal-700",
-      href: "/general-dentistry/preventative",
+      href: "#",
     },
     {
       icon: Zap,
@@ -73,7 +73,7 @@ export function ServicesSection() {
       price: "Call Now",
       color: "from-rose-50 to-pink-50",
       iconBg: "bg-rose-100 text-rose-700",
-      href: "/general-dentistry/emergency",
+      href: "#",
     },
     {
       icon: ShieldCheck,
@@ -82,7 +82,7 @@ export function ServicesSection() {
       price: t.services.consultation,
       color: "from-slate-50 to-stone-50",
       iconBg: "bg-slate-100 text-slate-700",
-      href: "/general-dentistry/preventative",
+      href: "#",
     },
   ];
   return (
@@ -154,7 +154,7 @@ export function ServicesSection() {
             {t.services.notSure}
           </p>
           <Link
-            href="/contact"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg"
           >
             <Calendar className="w-4 h-4" />

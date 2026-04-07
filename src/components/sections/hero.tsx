@@ -110,7 +110,7 @@ export function HeroSection() {
             {t.hero.privateMedicine}
           </Link>
           <Link
-            href="/contact"
+            href="#contact"
             className="group flex items-center gap-3 bg-gold hover:bg-gold-light text-navy px-8 py-4 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
           >
             <Calendar className="w-4 h-4" />

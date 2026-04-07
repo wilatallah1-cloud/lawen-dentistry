@@ -191,20 +191,20 @@ export function Navbar() {
   const t = getTranslations(locale);
 
   const cosmeticLinks = [
-    { label: t.nav.allAesthetic, href: "/cosmetic-dentistry" },
-    { label: t.nav.injectables, href: "/cosmetic-dentistry/whitening" },
-    { label: t.nav.radiofrequency, href: "/cosmetic-dentistry/veneers" },
-    { label: t.nav.lasers, href: "/cosmetic-dentistry/smile-makeovers" },
+    { label: t.nav.allAesthetic, href: "#" },
+    { label: t.nav.injectables, href: "#" },
+    { label: t.nav.radiofrequency, href: "#" },
+    { label: t.nav.lasers, href: "#" },
   ];
 
   const generalLinks = [
-    { label: t.nav.allMedical, href: "/general-dentistry" },
-    { label: t.nav.consultation, href: "/general-dentistry/new-patient" },
-    { label: t.nav.familyMedicine, href: "/general-dentistry/preventative" },
-    { label: t.nav.minorEmergency, href: "/general-dentistry/emergency" },
-    { label: t.nav.mentalHealth, href: "/general-dentistry/sedation" },
-    { label: t.nav.hormonotherapy, href: "/general-dentistry/tmj" },
-    { label: t.nav.weightManagement, href: "/general-dentistry/periodontics" },
+    { label: t.nav.allMedical, href: "#" },
+    { label: t.nav.consultation, href: "#" },
+    { label: t.nav.familyMedicine, href: "#" },
+    { label: t.nav.minorEmergency, href: "#" },
+    { label: t.nav.mentalHealth, href: "#" },
+    { label: t.nav.hormonotherapy, href: "#" },
+    { label: t.nav.weightManagement, href: "#" },
   ];
 
   useEffect(() => {
@@ -234,17 +234,16 @@ export function Navbar() {
               <img
                 src="/logo.png"
                 alt="Lawen Dentistry - Halifax, NS"
-                className={`h-14 md:h-24 lg:h-28 w-auto transition-all duration-300 ${
-                  scrolled ? "" : "brightness-0 invert"
-                }`}
+                style={scrolled ? { filter: "invert(1) sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85)" } : undefined}
+                className="h-10 md:h-12 w-auto transition-all duration-300"
               />
             </Link>
 
             {/* Desktop Nav */}
             <nav className="hidden xl:flex items-center gap-0">
               {[
-                { label: t.nav.home, href: "/" },
-                { label: t.nav.about, href: "/about" },
+                { label: t.nav.home, href: "#" },
+                { label: t.nav.about, href: "#" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -267,10 +266,10 @@ export function Navbar() {
                 scrolled={scrolled}
               />
               {[
-                { label: t.nav.pricing, href: "/pricing" },
-                { label: t.nav.promotions, href: "/promotions" },
-                { label: t.nav.faq, href: "/faq" },
-                { label: t.nav.contact, href: "/contact" },
+                { label: t.nav.pricing, href: "#" },
+                { label: t.nav.promotions, href: "#" },
+                { label: t.nav.faq, href: "#" },
+                { label: t.nav.contact, href: "#" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -288,7 +287,7 @@ export function Navbar() {
             <div className="hidden xl:flex items-center gap-3">
               <PhoneDropdown scrolled={scrolled} />
               <Link
-                href="/contact"
+                href="#contact"
                 className="flex items-center gap-1.5 bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
               >
                 <Calendar className="w-3.5 h-3.5" />
@@ -322,24 +321,24 @@ export function Navbar() {
             className="fixed inset-0 z-40 bg-navy pt-16 md:pt-24 px-6 overflow-y-auto xl:hidden pb-32"
           >
             <nav className="flex flex-col">
-              <Link href="/" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
+              <Link href="#" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.home}
               </Link>
-              <Link href="/about" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
+              <Link href="#" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.about}
               </Link>
               <MobileAccordion label={t.nav.medicalAesthetic} links={cosmeticLinks} onNavigate={closeMobile} />
               <MobileAccordion label={t.nav.medicalServices} links={generalLinks} onNavigate={closeMobile} />
-              <Link href="/pricing" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
+              <Link href="#" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.pricing}
               </Link>
-              <Link href="/promotions" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
+              <Link href="#" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.promotions}
               </Link>
-              <Link href="/faq" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
+              <Link href="#" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.faq}
               </Link>
-              <Link href="/contact" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
+              <Link href="#" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.contact}
               </Link>
             </nav>
@@ -363,7 +362,7 @@ export function Navbar() {
                 </a>
               </div>
               <Link
-                href="/contact"
+                href="#contact"
                 onClick={closeMobile}
                 className="flex items-center justify-center gap-2 bg-gold text-navy py-3 rounded-xl text-base font-semibold"
               >
@@ -393,7 +392,7 @@ export function Navbar() {
             <span className="text-[10px] leading-tight text-center">Mumford<br/>Road</span>
           </a>
           <Link
-            href="/contact"
+            href="#contact"
             className="flex flex-col items-center gap-1 py-3 text-gold"
           >
             <Calendar className="w-4 h-4" />
