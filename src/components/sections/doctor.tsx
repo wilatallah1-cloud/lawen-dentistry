@@ -17,7 +17,7 @@ export function DoctorSection() {
               {/* Image */}
               <div className="relative h-[400px] md:h-[520px]">
                 <div
-                  className="absolute inset-0 bg-cover bg-[center_20%]"
+                  className="absolute inset-0 bg-cover bg-[center_15%]"
                   style={{
                     backgroundImage:
                       "url('/dr-lawen.webp')",
