@@ -1,7 +1,7 @@
 "use client";
 
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/motion";
-import { Heart, CheckCircle, Users, Award, Shield } from "lucide-react";
+import { Heart, CheckCircle, Users, Award, Shield, Scan } from "lucide-react";
 import { useLocale } from "@/lib/locale";
 import { getTranslations } from "@/lib/translations";
 
@@ -16,7 +16,7 @@ export function AboutSection() {
       desc: t.about.patientCenteredDesc,
     },
     {
-      icon: Heart,
+      icon: Award,
       title: t.about.compassionate,
       desc: t.about.compassionateDesc,
     },
@@ -26,14 +26,14 @@ export function AboutSection() {
       desc: t.about.allAgesDesc,
     },
     {
-      icon: Award,
+      icon: Scan,
       title: t.about.excellence,
       desc: t.about.excellenceDesc,
     },
     {
       icon: Shield,
-      title: t.about.inclusive,
-      desc: t.about.inclusiveDesc,
+      title: "Insurance Accepted",
+      desc: "We submit claims on your behalf for speedy reimbursement. Most major dental plans accepted.",
       wide: true,
     },
   ];
@@ -65,9 +65,26 @@ export function AboutSection() {
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 {t.about.p2}
               </p>
+            </FadeIn>
+
+            {/* Languages & New Patients badge */}
+            <FadeIn delay={0.35}>
+              <div className="flex flex-wrap gap-3">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gold/10 border border-gold/20 text-sm font-medium text-navy">
+                  <Users className="w-3.5 h-3.5 text-gold" />
+                  New Patients Welcome
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-navy/5 border border-navy/10 text-sm font-medium text-navy">
+                  English, French & Arabic
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-navy/5 border border-navy/10 text-sm font-medium text-navy">
+                  <Shield className="w-3.5 h-3.5 text-gold" />
+                  Most Insurance Plans Accepted
+                </span>
+              </div>
             </FadeIn>
           </div>
 

@@ -39,7 +39,7 @@ export function FooterSection() {
                 <img
                   src="/logo.png"
                   alt="Lawen Dentistry - Halifax, NS"
-                  className="h-28 w-auto brightness-0 invert"
+                  className="h-10 w-auto"
                 />
               </div>
               <p className="text-white/50 text-sm leading-relaxed mb-6">

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Smile, Calendar } from "lucide-react";
+import { Smile, Calendar, Phone, Star, MapPin, Clock, Users, Shield } from "lucide-react";
 import Link from "@/components/locale-link";
 import { useLocale } from "@/lib/locale";
 import { getTranslations } from "@/lib/translations";
@@ -51,6 +51,17 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        {/* Accepting new patients badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 mb-6"
+        >
+          <Users className="w-4 h-4 text-gold" />
+          <span className="text-sm text-gold font-medium tracking-wide">Now Accepting New Patients</span>
+        </motion.div>
+
         {/* Icons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -96,11 +107,12 @@ export function HeroSection() {
           {t.hero.description}
         </motion.p>
 
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
         >
           <Link
             href="#services"
@@ -118,7 +130,52 @@ export function HeroSection() {
           </Link>
         </motion.div>
 
+        {/* Phone numbers */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
+          className="flex items-center justify-center gap-6 mb-12"
+        >
+          <a href="tel:9024241888" className="flex items-center gap-2 text-white/60 hover:text-gold transition-colors text-sm">
+            <Phone className="w-3.5 h-3.5" />
+            Spring Garden: (902) 424-1888
+          </a>
+          <span className="text-white/20">|</span>
+          <a href="tel:9024061888" className="flex items-center gap-2 text-white/60 hover:text-gold transition-colors text-sm">
+            <Phone className="w-3.5 h-3.5" />
+            Mumford: (902) 406-1888
+          </a>
+        </motion.div>
 
+        {/* Trust Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+          className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 pt-8 border-t border-white/10"
+        >
+          <div className="flex items-center gap-2">
+            <div className="flex gap-0.5">
+              {[1,2,3,4,5].map(i => (
+                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+              ))}
+            </div>
+            <span className="text-white/60 text-sm">5-Star Reviews</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Shield className="w-4 h-4 text-gold" />
+            <span className="text-white/60 text-sm">Insurance Accepted</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <MapPin className="w-4 h-4 text-gold" />
+            <span className="text-white/60 text-sm">2 Halifax Locations</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Clock className="w-4 h-4 text-gold" />
+            <span className="text-white/60 text-sm">Mon-Fri 8AM-5PM</span>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

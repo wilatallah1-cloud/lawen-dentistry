@@ -64,9 +64,27 @@ export function TestimonialsSection() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4">
             {t.testimonials.title} <span className="gold-shimmer">{t.testimonials.titleHighlight}</span> {t.testimonials.titleEnd}
           </h2>
-          <p className="text-white/50 max-w-xl mx-auto">
+          <p className="text-white/50 max-w-xl mx-auto mb-6">
             {t.testimonials.subtitle}
           </p>
+          {/* Google Rating Bar */}
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/5 border border-white/10">
+            <div className="flex gap-0.5">
+              {[1,2,3,4,5].map(i => (
+                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+              ))}
+            </div>
+            <span className="text-white/70 text-sm font-medium">5.0 on Google</span>
+            <span className="text-white/30">|</span>
+            <a
+              href="https://birdeye.com/lawen-dentistry-164202617478851"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold text-sm font-medium hover:text-gold-light transition-colors"
+            >
+              Read All Reviews &rarr;
+            </a>
+          </div>
         </FadeIn>
 
         <StaggerChildren
