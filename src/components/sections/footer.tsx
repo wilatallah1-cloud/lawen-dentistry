@@ -177,12 +177,8 @@ export function FooterSection() {
             ))}
           </div>
           <div className="flex items-center gap-2 text-xs text-white/30">
-            <a href={`/en${basePath === '/' ? '' : basePath}`} className={`hover:text-gold transition-colors ${locale === 'en' ? 'text-gold' : ''}`}>
-              EN
-            </a>
-            <span>|</span>
-            <a href={`/fr${basePath === '/' ? '' : basePath}`} className={`hover:text-gold transition-colors ${locale === 'fr' ? 'text-gold' : ''}`}>
-              FR
+            <a href="mailto:info@ourdentist.ca" className="hover:text-gold transition-colors">
+              info@ourdentist.ca
             </a>
           </div>
         </div>

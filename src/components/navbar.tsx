@@ -10,10 +10,8 @@ import {
   MapPin,
   ChevronDown,
   Sparkles,
-  Stethoscope,
 } from "lucide-react";
 import Link from "@/components/locale-link";
-import { usePathname } from "next/navigation";
 import { useLocale } from "@/lib/locale";
 import { getTranslations } from "@/lib/translations";
 
@@ -68,6 +66,69 @@ function DesktopDropdown({
                 {link.label}
               </Link>
             ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+/* Phone dropdown for choosing location */
+function PhoneDropdown({ scrolled }: { scrolled: boolean }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        className={`flex items-center gap-1.5 text-sm transition-colors duration-300 ${
+          scrolled ? "text-navy" : "text-white"
+        }`}
+      >
+        <Phone className="w-3.5 h-3.5" />
+        <span className="hidden 2xl:inline">Call Us</span>
+        <ChevronDown className={`w-3 h-3 transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.2 }}
+            className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-border/50 py-2 z-50"
+          >
+            <a
+              href="tel:9024241888"
+              className="flex items-center gap-3 px-4 py-3 text-sm text-navy/70 hover:text-gold hover:bg-cream transition-colors"
+              onClick={() => setOpen(false)}
+            >
+              <MapPin className="w-4 h-4 text-gold flex-shrink-0" />
+              <div>
+                <div className="font-semibold text-navy">Spring Garden</div>
+                <div className="text-xs text-navy/50">(902) 424-1888</div>
+              </div>
+            </a>
+            <a
+              href="tel:9024061888"
+              className="flex items-center gap-3 px-4 py-3 text-sm text-navy/70 hover:text-gold hover:bg-cream transition-colors"
+              onClick={() => setOpen(false)}
+            >
+              <MapPin className="w-4 h-4 text-gold flex-shrink-0" />
+              <div>
+                <div className="font-semibold text-navy">Mumford Road</div>
+                <div className="text-xs text-navy/50">(902) 406-1888</div>
+              </div>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
@@ -154,11 +215,6 @@ export function Navbar() {
 
   const closeMobile = () => setMobileOpen(false);
 
-  const pathname = usePathname();
-  const basePath = pathname.replace(/^\/(en|fr)/, "") || "/";
-  const otherLocale = locale === "en" ? "fr" : "en";
-  const switchHref = `/${otherLocale}${basePath === "/" ? "" : basePath}`;
-
   return (
     <>
       <motion.header
@@ -230,25 +286,7 @@ export function Navbar() {
 
             {/* Desktop CTA */}
             <div className="hidden xl:flex items-center gap-3">
-              <a
-                href={switchHref}
-                className={`px-2.5 py-1.5 rounded-full border text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
-                  scrolled
-                    ? "border-navy/20 text-navy hover:bg-gold hover:border-gold hover:text-navy"
-                    : "border-white/30 text-white hover:bg-gold hover:border-gold hover:text-navy"
-                }`}
-              >
-                {otherLocale === "fr" ? "FR" : "EN"}
-              </a>
-              <Link
-                href="tel:+19024241888"
-                className={`flex items-center gap-1.5 text-sm transition-colors duration-300 ${
-                  scrolled ? "text-navy" : "text-white"
-                }`}
-              >
-                <Phone className="w-3.5 h-3.5" />
-                <span className="hidden 2xl:inline">(902) 424-1888</span>
-              </Link>
+              <PhoneDropdown scrolled={scrolled} />
               <Link
                 href="/contact"
                 className="flex items-center gap-1.5 bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
@@ -258,18 +296,8 @@ export function Navbar() {
               </Link>
             </div>
 
-            {/* Mobile: Lang + Menu Toggle */}
+            {/* Mobile: Menu Toggle */}
             <div className="xl:hidden flex items-center gap-2">
-              <a
-                href={switchHref}
-                className={`px-2.5 py-1.5 rounded-full border text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
-                  scrolled
-                    ? "border-navy/20 text-navy hover:bg-gold hover:border-gold"
-                    : "border-white/30 text-white hover:bg-gold hover:border-gold hover:text-navy"
-                }`}
-              >
-                {otherLocale === "fr" ? "FR" : "EN"}
-              </a>
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 className={`p-2 transition-colors ${
@@ -316,13 +344,24 @@ export function Navbar() {
               </Link>
             </nav>
             <div className="mt-8 flex flex-col gap-3">
-              <Link
-                href="tel:+19024241888"
-                className="flex items-center justify-center gap-2 bg-white/10 text-white py-3 rounded-xl text-base"
-              >
-                <Phone className="w-5 h-5" />
-                (902) 424-1888
-              </Link>
+              <div className="grid grid-cols-2 gap-3">
+                <a
+                  href="tel:9024241888"
+                  className="flex flex-col items-center gap-1 bg-white/10 text-white py-3 rounded-xl text-sm"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span className="font-semibold">Spring Garden</span>
+                  <span className="text-white/60 text-xs">(902) 424-1888</span>
+                </a>
+                <a
+                  href="tel:9024061888"
+                  className="flex flex-col items-center gap-1 bg-white/10 text-white py-3 rounded-xl text-sm"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span className="font-semibold">Mumford Rd</span>
+                  <span className="text-white/60 text-xs">(902) 406-1888</span>
+                </a>
+              </div>
               <Link
                 href="/contact"
                 onClick={closeMobile}
@@ -338,29 +377,36 @@ export function Navbar() {
 
       {/* Mobile Bottom Bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 xl:hidden bg-navy/95 backdrop-blur-md border-t border-white/10">
-        <div className="grid grid-cols-3 divide-x divide-white/10">
-          <Link
-            href="tel:+19024241888"
+        <div className="grid grid-cols-4 divide-x divide-white/10">
+          <a
+            href="tel:9024241888"
             className="flex flex-col items-center gap-1 py-3 text-white/80 hover:text-gold transition-colors"
           >
-            <Phone className="w-5 h-5" />
-            <span className="text-xs">{t.nav.call}</span>
-          </Link>
+            <Phone className="w-4 h-4" />
+            <span className="text-[10px] leading-tight text-center">Spring<br/>Garden</span>
+          </a>
+          <a
+            href="tel:9024061888"
+            className="flex flex-col items-center gap-1 py-3 text-white/80 hover:text-gold transition-colors"
+          >
+            <Phone className="w-4 h-4" />
+            <span className="text-[10px] leading-tight text-center">Mumford<br/>Road</span>
+          </a>
           <Link
             href="/contact"
             className="flex flex-col items-center gap-1 py-3 text-gold"
           >
-            <Calendar className="w-5 h-5" />
-            <span className="text-xs font-semibold">{t.nav.book}</span>
+            <Calendar className="w-4 h-4" />
+            <span className="text-[10px] font-semibold">Book</span>
           </Link>
-          <Link
+          <a
             href="https://maps.google.com/?q=5991+Spring+Garden+Road+Halifax+NS"
             target="_blank"
             className="flex flex-col items-center gap-1 py-3 text-white/80 hover:text-gold transition-colors"
           >
-            <MapPin className="w-5 h-5" />
-            <span className="text-xs">{t.nav.location}</span>
-          </Link>
+            <MapPin className="w-4 h-4" />
+            <span className="text-[10px]">Locations</span>
+          </a>
         </div>
       </div>
     </>

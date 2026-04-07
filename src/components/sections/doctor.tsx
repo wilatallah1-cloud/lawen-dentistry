@@ -19,7 +19,7 @@ export function DoctorSection() {
                   className="absolute inset-0 bg-cover bg-top"
                   style={{
                     backgroundImage:
-                      "url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop')",
+                      "url('/dr-lawen.webp')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-navy-dark/80 hidden md:block" />
@@ -62,7 +62,7 @@ export function DoctorSection() {
                     <div className="w-px h-10 bg-white/10" />
                     <div className="text-center">
                       <div className="font-heading text-2xl font-bold text-gold">
-                        Diamond+
+                        Since 2006
                       </div>
                       <div className="text-white/40 text-xs uppercase tracking-wider">
                         {t.doctor.certifications}

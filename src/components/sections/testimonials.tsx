@@ -10,37 +10,37 @@ const testimonials = [
     name: "Talie T.",
     treatment: "General Dentistry",
     rating: 5,
-    text: "Dr. Lawen really makes you forget you're at the big scary dentist office. The entire team is warm, welcoming, and incredibly skilled.",
+    text: "Dental hygienist and assistant were friendly, down to earth and made the entire experience really great. Dr. Lawen really makes you forget you're at the big scary dentist office.",
   },
   {
     name: "Amara H.",
     treatment: "Invisalign",
     rating: 5,
-    text: "The Invisalign process is so streamlined they have it down to a science. Couldn't be happier with my results and the entire experience.",
+    text: "Everyone at this office is a real life angel. Lori, Michelle, Anna, every single person is happy to see you and completely professional. The Invisalign process is so streamlined they have it down to a science, the whole thing is ridiculously efficient.",
   },
   {
     name: "Lacey C.",
     treatment: "Invisalign",
     rating: 5,
-    text: "I just finished my Invisalign treatment and can't say enough great things. My new smile makes me feel more confident and so happy!",
+    text: "I just finished my Invisalign treatment and can't say enough great things about this clinic. Dr. Lawen and his team are amazing! With their help, my new smile makes me feel more confident and so happy!",
   },
   {
     name: "Connor M.",
     treatment: "Long-term Patient",
     rating: 5,
-    text: "Outstanding care and customer service! I have been going for 7 years and they have always been incredible. Highly recommend to everyone.",
+    text: "Outstanding care and customer service! I have been going to Lawen Dentistry for 7 years and they have always been incredible. Kind people, never late, solid dental care, and the dentists always provide meaningful responses to my questions.",
   },
   {
-    name: "Sarah W.",
-    treatment: "Cosmetic Dentistry",
+    name: "Verified Patient",
+    treatment: "Smile Transformation",
     rating: 5,
-    text: "Dr. Lawen and his team transformed my smile completely. The attention to detail and care throughout the process was exceptional.",
+    text: "They made a difference in my smile I didn't think was possible. The whole team is professional and caring from start to finish.",
   },
   {
-    name: "Michael R.",
-    treatment: "Emergency Care",
+    name: "Verified Patient",
+    treatment: "Family Dentistry",
     rating: 5,
-    text: "Had a dental emergency and they got me in right away. Professional, compassionate, and thorough. This is what great dental care looks like.",
+    text: "I highly recommend Lawen Dentistry to anyone of any age. The care and attention to detail is second to none.",
   },
 ];
 
@@ -73,8 +73,8 @@ export function TestimonialsSection() {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
           staggerDelay={0.08}
         >
-          {testimonials.map((item) => (
-            <StaggerItem key={item.name}>
+          {testimonials.map((item, idx) => (
+            <StaggerItem key={idx}>
               <div className="relative p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/8 hover:border-gold/20 transition-all duration-500 h-full flex flex-col">
                 <Quote className="w-8 h-8 text-gold/30 mb-4" />
 

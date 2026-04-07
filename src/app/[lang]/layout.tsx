@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
 };
 
-const validLocales: Locale[] = ["en", "fr"];
+const validLocales: Locale[] = ["en"];
 
 export async function generateStaticParams() {
   return validLocales.map((lang) => ({ lang }));

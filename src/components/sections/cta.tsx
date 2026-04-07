@@ -1,7 +1,7 @@
 "use client";
 
 import { FadeIn } from "@/components/motion";
-import { Calendar } from "lucide-react";
+import { Calendar, Phone, MapPin } from "lucide-react";
 import Link from "@/components/locale-link";
 import { useLocale } from "@/lib/locale";
 import { getTranslations } from "@/lib/translations";
@@ -39,13 +39,22 @@ export function CTASection() {
         </FadeIn>
 
         <FadeIn delay={0.3}>
-          <Link
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy px-10 py-4 rounded-full text-base font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
-          >
-            <Calendar className="w-5 h-5" />
-            {t.cta.bookAppointment}
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="tel:9024241888"
+              className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy px-8 py-4 rounded-full text-base font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
+            >
+              <Phone className="w-5 h-5" />
+              Spring Garden
+            </a>
+            <a
+              href="tel:9024061888"
+              className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-full text-base font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-navy/20"
+            >
+              <Phone className="w-5 h-5" />
+              Mumford Road
+            </a>
+          </div>
         </FadeIn>
       </div>
     </section>

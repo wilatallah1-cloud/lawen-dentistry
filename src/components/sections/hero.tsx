@@ -21,7 +21,7 @@ export function HeroSection() {
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop')",
+              "url('/hero-bg.webp')",
           }}
         />
         {/* Gradient overlays */}

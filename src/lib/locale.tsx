@@ -2,7 +2,7 @@
 
 import { createContext, useContext, type ReactNode } from "react";
 
-export type Locale = "en" | "fr";
+export type Locale = "en";
 
 const LocaleContext = createContext<Locale>("en");
 
