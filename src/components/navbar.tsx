@@ -129,34 +129,21 @@ export function Navbar() {
   const locale = useLocale();
   const t = getTranslations(locale);
 
-  const aestheticLinks = [
-    { label: t.nav.allAesthetic, href: "/medical-aesthetic" },
-    { label: t.nav.injectables, href: "/medical-aesthetic/injectables" },
-    { label: t.nav.radiofrequency, href: "/medical-aesthetic/radiofrequency-lifting" },
-    { label: t.nav.lasers, href: "/medical-aesthetic/lasers" },
-    { label: t.nav.lipolysis, href: "/medical-aesthetic/lipolysis" },
-    { label: t.nav.liquidBBL, href: "/medical-aesthetic/liquid-brazilian-butt-lift" },
-    { label: t.nav.hairStim, href: "/medical-aesthetic/hair-stimulation" },
-    { label: t.nav.blepharoplasty, href: "/medical-aesthetic/non-surgical-blepharoplasty" },
-    { label: t.nav.facialContouring, href: "/medical-aesthetic/facial-contouring" },
+  const cosmeticLinks = [
+    { label: t.nav.allAesthetic, href: "/cosmetic-dentistry" },
+    { label: t.nav.injectables, href: "/cosmetic-dentistry/whitening" },
+    { label: t.nav.radiofrequency, href: "/cosmetic-dentistry/veneers" },
+    { label: t.nav.lasers, href: "/cosmetic-dentistry/smile-makeovers" },
   ];
 
-  const sexualHealthLinks = [
-    { label: t.nav.penisFillers, href: "/sexual-health/penis-fillers" },
-    { label: t.nav.scrotox, href: "/sexual-health/scrotox-grotox" },
-    { label: t.nav.holetox, href: "/sexual-health/holetox" },
-    { label: t.nav.penisEnhancement, href: "/sexual-health/penis-enhancement-benefits" },
-    { label: t.nav.faqPenile, href: "/sexual-health/faq" },
-  ];
-
-  const medicalLinks = [
-    { label: t.nav.allMedical, href: "/medical-services" },
-    { label: t.nav.consultation, href: "/medical-services/consultation" },
-    { label: t.nav.familyMedicine, href: "/medical-services/family-medicine" },
-    { label: t.nav.minorEmergency, href: "/medical-services/minor-emergency" },
-    { label: t.nav.mentalHealth, href: "/medical-services/mental-health" },
-    { label: t.nav.hormonotherapy, href: "/medical-services/hormonotherapy" },
-    { label: t.nav.weightManagement, href: "/medical-services/weight-management" },
+  const generalLinks = [
+    { label: t.nav.allMedical, href: "/general-dentistry" },
+    { label: t.nav.consultation, href: "/general-dentistry/new-patient" },
+    { label: t.nav.familyMedicine, href: "/general-dentistry/preventative" },
+    { label: t.nav.minorEmergency, href: "/general-dentistry/emergency" },
+    { label: t.nav.mentalHealth, href: "/general-dentistry/sedation" },
+    { label: t.nav.hormonotherapy, href: "/general-dentistry/tmj" },
+    { label: t.nav.weightManagement, href: "/general-dentistry/periodontics" },
   ];
 
   useEffect(() => {
@@ -190,7 +177,7 @@ export function Navbar() {
             <Link href="/" className="flex-shrink-0">
               <img
                 src="/logo.png"
-                alt="Dr. Laurent - Médecine Privée & Esthétique"
+                alt="Lawen Dentistry - Halifax, NS"
                 className={`h-14 md:h-24 lg:h-28 w-auto transition-all duration-300 ${
                   scrolled ? "" : "brightness-0 invert"
                 }`}
@@ -215,12 +202,12 @@ export function Navbar() {
               ))}
               <DesktopDropdown
                 label={t.nav.aesthetic}
-                links={[...aestheticLinks, { label: `── ${t.nav.sexualHealthLabel} ──`, href: "#" }, ...sexualHealthLinks]}
+                links={cosmeticLinks}
                 scrolled={scrolled}
               />
               <DesktopDropdown
                 label={t.nav.services}
-                links={medicalLinks}
+                links={generalLinks}
                 scrolled={scrolled}
               />
               {[
@@ -254,13 +241,13 @@ export function Navbar() {
                 {otherLocale === "fr" ? "FR" : "EN"}
               </a>
               <Link
-                href="tel:+15145003422"
+                href="tel:+19024241888"
                 className={`flex items-center gap-1.5 text-sm transition-colors duration-300 ${
                   scrolled ? "text-navy" : "text-white"
                 }`}
               >
                 <Phone className="w-3.5 h-3.5" />
-                <span className="hidden 2xl:inline">(514) 500-3422</span>
+                <span className="hidden 2xl:inline">(902) 424-1888</span>
               </Link>
               <Link
                 href="/contact"
@@ -313,9 +300,8 @@ export function Navbar() {
               <Link href="/about" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.about}
               </Link>
-              <MobileAccordion label={t.nav.medicalAesthetic} links={aestheticLinks} onNavigate={closeMobile} />
-              <MobileAccordion label={t.nav.sexualHealthLabel} links={sexualHealthLinks} onNavigate={closeMobile} />
-              <MobileAccordion label={t.nav.medicalServices} links={medicalLinks} onNavigate={closeMobile} />
+              <MobileAccordion label={t.nav.medicalAesthetic} links={cosmeticLinks} onNavigate={closeMobile} />
+              <MobileAccordion label={t.nav.medicalServices} links={generalLinks} onNavigate={closeMobile} />
               <Link href="/pricing" onClick={closeMobile} className="block py-3 text-xl font-heading text-white/80 hover:text-gold transition-colors border-b border-white/5">
                 {t.nav.pricing}
               </Link>
@@ -331,11 +317,11 @@ export function Navbar() {
             </nav>
             <div className="mt-8 flex flex-col gap-3">
               <Link
-                href="tel:+15145003422"
+                href="tel:+19024241888"
                 className="flex items-center justify-center gap-2 bg-white/10 text-white py-3 rounded-xl text-base"
               >
                 <Phone className="w-5 h-5" />
-                (514) 500-3422
+                (902) 424-1888
               </Link>
               <Link
                 href="/contact"
@@ -354,7 +340,7 @@ export function Navbar() {
       <div className="fixed bottom-0 left-0 right-0 z-50 xl:hidden bg-navy/95 backdrop-blur-md border-t border-white/10">
         <div className="grid grid-cols-3 divide-x divide-white/10">
           <Link
-            href="tel:+15145003422"
+            href="tel:+19024241888"
             className="flex flex-col items-center gap-1 py-3 text-white/80 hover:text-gold transition-colors"
           >
             <Phone className="w-5 h-5" />
@@ -368,7 +354,7 @@ export function Navbar() {
             <span className="text-xs font-semibold">{t.nav.book}</span>
           </Link>
           <Link
-            href="https://maps.google.com/?q=4072+Le+Corbusier+Laval+QC"
+            href="https://maps.google.com/?q=5991+Spring+Garden+Road+Halifax+NS"
             target="_blank"
             className="flex flex-col items-center gap-1 py-3 text-white/80 hover:text-gold transition-colors"
           >

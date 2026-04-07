@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PricingContent } from "./content";
 
 export const metadata: Metadata = {
-  title: "Pricing | Dr. Laurent - Médecine Privée",
+  title: "Pricing | Lawen Dentistry - Halifax, NS",
   description:
-    "Clear and transparent pricing for all medical aesthetic and private medical services at Dr. Laurent's clinic in Laval, Quebec.",
+    "Dental service pricing at Lawen Dentistry in Halifax, Nova Scotia. Cleanings, whitening, Invisalign, implants, and more.",
 };
 
 export default function Pricing() {

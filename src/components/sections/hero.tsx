@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Stethoscope, Sparkles } from "lucide-react";
+import { Smile, Calendar } from "lucide-react";
 import Link from "@/components/locale-link";
 import { useLocale } from "@/lib/locale";
 import { getTranslations } from "@/lib/translations";
@@ -21,7 +21,7 @@ export function HeroSection() {
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
             backgroundImage:
-              "url('https://drlaurentmedecineprivee.ca/assets/hero-medical-consultation-DPuVY465.jpg')",
+              "url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop')",
           }}
         />
         {/* Gradient overlays */}
@@ -59,11 +59,11 @@ export function HeroSection() {
           className="flex items-center justify-center gap-4 mb-8"
         >
           <div className="p-3 rounded-full border border-gold/30 bg-gold/5">
-            <Stethoscope className="w-7 h-7 text-gold" />
+            <Smile className="w-7 h-7 text-gold" />
           </div>
           <div className="w-px h-10 bg-gold/30" />
           <div className="p-3 rounded-full border border-gold/30 bg-gold/5">
-            <Sparkles className="w-7 h-7 text-gold" />
+            <Calendar className="w-7 h-7 text-gold" />
           </div>
         </motion.div>
 
@@ -106,14 +106,14 @@ export function HeroSection() {
             href="#services"
             className="group flex items-center gap-3 bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 hover:border-gold/40 text-white px-8 py-4 rounded-full text-sm font-medium tracking-wide transition-all duration-300"
           >
-            <Stethoscope className="w-4 h-4 text-gold" />
+            <Smile className="w-4 h-4 text-gold" />
             {t.hero.privateMedicine}
           </Link>
           <Link
-            href="#services"
+            href="/contact"
             className="group flex items-center gap-3 bg-gold hover:bg-gold-light text-navy px-8 py-4 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
           >
-            <Sparkles className="w-4 h-4" />
+            <Calendar className="w-4 h-4" />
             {t.hero.medicalAesthetic}
           </Link>
         </motion.div>

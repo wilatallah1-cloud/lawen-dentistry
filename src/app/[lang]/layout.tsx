@@ -21,22 +21,22 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title:
-    "Dr. Laurent | Private Healthcare & Medical Aesthetic Solutions in Laval",
+    "Lawen Dentistry | Comprehensive Dental Care in Halifax, NS",
   description:
-    "Dr. Laurent's private medical clinic combines comprehensive family medicine with advanced medico-aesthetic treatments. Personalized care in Laval, QC.",
+    "Lawen Dentistry provides comprehensive dental care including Invisalign, cosmetic dentistry, implants, and emergency care across two Halifax locations. Diamond+ Invisalign Provider.",
   keywords: [
-    "private clinic laval",
-    "medical aesthetic",
-    "family medicine",
-    "botox laval",
-    "dermal fillers",
-    "Dr. Laurent",
-    "médecine privée",
+    "dentist halifax",
+    "invisalign halifax",
+    "cosmetic dentistry",
+    "dental implants",
+    "Lawen Dentistry",
+    "Dr. Daniel Lawen",
+    "emergency dentist halifax",
   ],
   openGraph: {
-    title: "Dr. Laurent | Private Healthcare & Medical Aesthetic Solutions",
+    title: "Lawen Dentistry | Excellence in Dentistry | Halifax, NS",
     description:
-      "One physician. Two specialties. Comprehensive medical care and advanced aesthetic treatments under one roof.",
+      "Comprehensive dental care delivered with warmth and precision. Two convenient Halifax locations. Diamond+ Invisalign Provider.",
     type: "website",
     locale: "en_CA",
   },

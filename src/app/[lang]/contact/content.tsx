@@ -22,7 +22,7 @@ const content = {
     heroTitle: "Contact",
     heroHighlight: "Us",
     heroDesc:
-      "Have questions or need to schedule an appointment? We\u2019re here to help you on your health journey.",
+      "Have questions or need to schedule a dental appointment? We\u2019re here to help you achieve your healthiest smile.",
     formTitle: "Send Us a Message",
     formDesc:
       "Fill out the form below and we\u2019ll get back to you as soon as possible.",
@@ -33,12 +33,13 @@ const content = {
     labelMessage: "Message",
     sendMessage: "Send Message",
     confidential: "Your information is 100% confidential and secure",
-    infoAddress: "Address",
     infoPhone: "Phone",
     infoEmail: "Email",
     infoHours: "Hours",
+    locationSpringGarden: "Spring Garden Location",
+    locationMumford: "Mumford Road Location",
     bookTitle: "Book an Appointment",
-    bookDesc: "Ready to schedule? Click below to book your consultation directly.",
+    bookDesc: "Ready to schedule? Click below to call and book your appointment directly.",
     bookButton: "Book Now",
     expectTitle: "What to Expect",
     expectDesc:
@@ -49,7 +50,7 @@ const content = {
       "Confidential service",
     ],
     ctaTitle: "Ready to Start Your",
-    ctaHighlight: "Transformation?",
+    ctaHighlight: "Smile Journey?",
     ctaDesc: "Book your consultation today",
     ctaButton: "Book Now",
   },
@@ -58,7 +59,7 @@ const content = {
     heroTitle: "Contactez-",
     heroHighlight: "nous",
     heroDesc:
-      "Des questions ou besoin de prendre rendez-vous\u00A0? Nous sommes l\u00E0 pour vous accompagner dans votre parcours sant\u00E9.",
+      "Des questions ou besoin de prendre un rendez-vous dentaire\u00A0? Nous sommes l\u00E0 pour vous aider \u00E0 obtenir votre plus beau sourire.",
     formTitle: "Envoyez-nous un message",
     formDesc:
       "Remplissez le formulaire ci-dessous et nous vous r\u00E9pondrons dans les plus brefs d\u00E9lais.",
@@ -69,13 +70,14 @@ const content = {
     labelMessage: "Message",
     sendMessage: "Envoyer le message",
     confidential: "Vos informations sont 100\u00A0% confidentielles et s\u00E9curis\u00E9es",
-    infoAddress: "Adresse",
     infoPhone: "T\u00E9l\u00E9phone",
     infoEmail: "Courriel",
     infoHours: "Heures",
+    locationSpringGarden: "Emplacement Spring Garden",
+    locationMumford: "Emplacement Mumford Road",
     bookTitle: "Prendre rendez-vous",
     bookDesc:
-      "Pr\u00EAt \u00E0 planifier\u00A0? Cliquez ci-dessous pour r\u00E9server votre consultation directement.",
+      "Pr\u00EAt \u00E0 planifier\u00A0? Cliquez ci-dessous pour appeler et r\u00E9server votre rendez-vous directement.",
     bookButton: "R\u00E9server",
     expectTitle: "\u00C0 quoi s\u2019attendre",
     expectDesc:
@@ -86,7 +88,7 @@ const content = {
       "Service confidentiel",
     ],
     ctaTitle: "Pr\u00EAt \u00E0 commencer votre",
-    ctaHighlight: "transformation\u00A0?",
+    ctaHighlight: "parcours sourire\u00A0?",
     ctaDesc: "R\u00E9servez votre consultation d\u00E8s aujourd\u2019hui",
     ctaButton: "R\u00E9server",
   },
@@ -100,26 +102,32 @@ export function ContactContent() {
   const contactInfo = [
     {
       icon: MapPin,
-      title: c.infoAddress,
-      detail: "4072 Boul. le Corbusier, Laval, QC H7L 5R2",
-      href: "https://maps.google.com/?q=4072+Boul.+le+Corbusier+Laval+QC+H7L+5R2",
+      title: c.locationSpringGarden,
+      detail: "275-5991 Spring Garden Road, Halifax, NS B3H 1Y6",
+      href: "https://maps.google.com/?q=275-5991+Spring+Garden+Road+Halifax+NS+B3H+1Y6",
+    },
+    {
+      icon: MapPin,
+      title: c.locationMumford,
+      detail: "101-7037 Mumford Road, Halifax, NS B3L 2J1",
+      href: "https://maps.google.com/?q=101-7037+Mumford+Road+Halifax+NS+B3L+2J1",
     },
     {
       icon: Phone,
       title: c.infoPhone,
-      detail: "(514) 500-3422",
-      href: "tel:+15145003422",
+      detail: "(902) 424-1888 / (902) 406-1888",
+      href: "tel:+19024241888",
     },
     {
       icon: Mail,
       title: c.infoEmail,
-      detail: "info@drlaurentmedecineetesthetique.com",
-      href: "mailto:info@drlaurentmedecineetesthetique.com",
+      detail: "info@ourdentist.ca",
+      href: "mailto:info@ourdentist.ca",
     },
     {
       icon: Clock,
       title: c.infoHours,
-      detail: locale === "fr" ? "Lun-Ven : 9h00 - 18h00" : "Mon-Fri: 9AM - 6PM",
+      detail: locale === "fr" ? "Lun-Ven : 8h00 - 17h00" : "Mon-Fri: 8AM - 5PM",
       href: undefined,
     },
   ];
@@ -264,7 +272,7 @@ export function ContactContent() {
                     {c.bookDesc}
                   </p>
                   <Link
-                    href="tel:+15145003422"
+                    href="tel:+19024241888"
                     className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300"
                   >
                     <Calendar className="w-4 h-4" />
@@ -300,8 +308,8 @@ export function ContactContent() {
         {/* Map */}
         <section className="h-80 bg-navy/5">
           <iframe
-            title="Dr. Laurent Clinic Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.2!2d-73.75!3d45.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s4072+Boul.+le+Corbusier%2C+Laval%2C+QC+H7L+5R2!5e0!3m2!1sen!2sca!4v1"
+            title="Lawen Dentistry - Spring Garden Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.5!2d-63.58!3d44.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s275-5991+Spring+Garden+Road%2C+Halifax%2C+NS+B3H+1Y6!5e0!3m2!1sen!2sca!4v1"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -323,7 +331,7 @@ export function ContactContent() {
                 {c.ctaDesc}
               </p>
               <Link
-                href="tel:+15145003422"
+                href="tel:+19024241888"
                 className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy px-10 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
               >
                 <Calendar className="w-5 h-5" />

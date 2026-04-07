@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { AboutContent } from "./content";
 
 export const metadata: Metadata = {
-  title: "About | Dr. Laurent - Médecine Privée",
+  title: "About | Lawen Dentistry - Halifax, NS",
   description:
-    "Learn about Dr. Jean-Baptiste Laurent, a family medicine specialist offering private healthcare and medical aesthetic services in Laval, Quebec.",
+    "Learn about Dr. Daniel Lawen, DDS, Diamond+ Invisalign Provider and founder of Lawen Dentistry in Halifax, Nova Scotia.",
 };
 
 export default function About() {

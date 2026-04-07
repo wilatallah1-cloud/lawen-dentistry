@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PromotionsContent } from "./content";
 
 export const metadata: Metadata = {
-  title: "Promotions | Dr. Laurent - Médecine Privée",
+  title: "Promotions | Lawen Dentistry - Halifax, NS",
   description:
-    "Take advantage of exclusive offers on premium aesthetic treatments at Dr. Laurent's clinic in Laval. Quality care at exceptional prices.",
+    "Take advantage of exclusive dental promotions at Lawen Dentistry in Halifax. Quality dental care at exceptional prices.",
 };
 
 export default function Promotions() {

@@ -17,89 +17,86 @@ import { getTranslations } from "@/lib/translations";
 
 const content = {
   en: {
-    badge: "About Our Clinic",
+    badge: "About Our Practice",
     heroTitle: "Excellence in",
-    heroHighlight: "Medicine",
+    heroHighlight: "Dentistry",
     heroDesc:
-      "Dr. Laurent\u2019s private medical clinic combines comprehensive family medicine with advanced medico-aesthetic treatments, offering personalized and compassionate care for patients of all ages.",
-    specialist: "Family Medicine Specialist",
-    bio1: "Dr. Laurent is a board-certified physician specializing in both comprehensive family medicine and advanced medico-aesthetic treatments. His unique practice unites two specialties under one roof, delivering distinct services with the same precision, safety, and personalized excellence.",
-    bio2: "Known for his compassionate approach and meticulous attention to detail, Dr. Laurent creates a safe, judgment-free environment where patients feel comfortable discussing their health concerns. His commitment to patient privacy and satisfaction has made him a trusted name in private healthcare.",
-    bio3: "From primary healthcare to aesthetic enhancements, Dr. Laurent is committed to the highest medical standards and a patient-centered approach, ensuring you receive the attention and expertise you deserve.",
+      "Lawen Dentistry combines comprehensive general dentistry with advanced cosmetic and restorative treatments, offering personalized and compassionate care for patients of all ages at two convenient Halifax locations.",
+    specialist: "Doctor of Dental Surgery (DDS)",
+    bio1: "Dr. Daniel Lawen is a Doctor of Dental Surgery and the founder of Lawen Dentistry in Halifax, Nova Scotia. As a Diamond+ Invisalign Provider, he is among the top-tier clear aligner practitioners in the country, with extensive experience delivering outstanding orthodontic results.",
+    bio2: "Dr. Lawen is a proud member of the American Academy of Clear Aligners and the Academy of General Dentistry. His commitment to continuing education and advanced techniques ensures patients receive the highest standard of care across all dental disciplines.",
+    bio3: "From routine cleanings and preventive care to complex restorative procedures and cosmetic transformations, Dr. Lawen and his team are dedicated to creating healthy, confident smiles in a warm and welcoming environment.",
     statPatients: "Patients Treated",
-    statCertified: "Certified Physician",
+    statCertified: "Diamond+ Provider",
     statRating: "Patient Rating",
     valuesTitle: "Our Values",
     valuesSubtitle:
-      "Medical care and medico-aesthetic treatments designed with your privacy, comfort, and well-being at the heart of everything we do.",
+      "Dental care designed with your comfort, health, and confidence at the heart of everything we do.",
     valuePatientCentered: "Patient-Centered",
     valuePatientCenteredDesc: "Personalized care for every family member.",
     valueCompassionate: "Compassionate",
     valueCompassionateDesc: "Understanding & supportive approach.",
     valueAllAges: "All Ages",
-    valueAllAgesDesc: "From newborns to seniors.",
+    valueAllAgesDesc: "From children to seniors.",
     valueExcellence: "Excellence",
-    valueExcellenceDesc: "Highest medical standards.",
+    valueExcellenceDesc: "Highest dental care standards.",
     inclusiveTitle: "Inclusive Care",
     inclusiveDesc:
-      "This clinic proudly provides safe, respectful, and fully inclusive care for all members of the LGBTQIA2S+ community.",
+      "Lawen Dentistry proudly provides safe, respectful, and fully inclusive care for all members of our community.",
     certBadge: "Trusted & Certified",
-    certTitle: "Recognized by Leading Medical Organizations",
+    certTitle: "Recognized by Leading Dental Organizations",
     certSubtitle:
-      "Dr. Laurent\u2019s unwavering commitment to excellence is validated by prestigious healthcare institutions worldwide.",
-    certObesityCanada: "Certified in weight management excellence.",
-    certCalibre: "Recognized for quality healthcare standards.",
-    certWorldlink: "Trusted global medical network partner.",
+      "Dr. Lawen\u2019s commitment to excellence is validated by prestigious dental institutions and professional organizations.",
+    certAACA: "Member of the American Academy of Clear Aligners.",
+    certAGD: "Member of the Academy of General Dentistry.",
+    certInvisalign: "Diamond+ Invisalign Provider.",
     certLabel: "Certified",
     ctaTitle: "Ready to Start Your",
-    ctaHighlight: "Wellness Journey?",
+    ctaHighlight: "Smile Journey?",
     ctaDesc:
-      "Book your appointment today and experience personalized care that puts you first.",
+      "Book your appointment today and experience personalized dental care that puts you first.",
     ctaButton: "Book Your Appointment",
   },
   fr: {
-    badge: "\u00C0 propos de notre clinique",
+    badge: "\u00C0 propos de notre cabinet",
     heroTitle: "L\u2019excellence en",
-    heroHighlight: "M\u00E9decine",
+    heroHighlight: "Dentisterie",
     heroDesc:
-      "La clinique priv\u00E9e du Dr\u00A0Laurent combine la m\u00E9decine familiale compl\u00E8te et les traitements m\u00E9dico-esth\u00E9tiques avanc\u00E9s, offrant des soins personnalis\u00E9s et empreints de compassion pour les patients de tous \u00E2ges.",
-    specialist: "Sp\u00E9cialiste en m\u00E9decine familiale",
-    bio1: "Le Dr\u00A0Laurent est un m\u00E9decin certifi\u00E9 sp\u00E9cialis\u00E9 en m\u00E9decine familiale compl\u00E8te et en traitements m\u00E9dico-esth\u00E9tiques avanc\u00E9s. Sa pratique unique r\u00E9unit deux sp\u00E9cialit\u00E9s sous un m\u00EAme toit, offrant des services distincts avec la m\u00EAme pr\u00E9cision, s\u00E9curit\u00E9 et excellence personnalis\u00E9e.",
-    bio2: "Reconnu pour son approche bienveillante et son attention m\u00E9ticuleuse aux d\u00E9tails, le Dr\u00A0Laurent cr\u00E9e un environnement s\u00E9curitaire et sans jugement o\u00F9 les patients se sentent \u00E0 l\u2019aise de discuter de leurs pr\u00E9occupations de sant\u00E9. Son engagement envers la confidentialit\u00E9 et la satisfaction des patients en fait un nom de confiance en soins de sant\u00E9 priv\u00E9s.",
-    bio3: "Des soins de sant\u00E9 primaires aux am\u00E9liorations esth\u00E9tiques, le Dr\u00A0Laurent s\u2019engage aux plus hautes normes m\u00E9dicales et \u00E0 une approche centr\u00E9e sur le patient, vous assurant l\u2019attention et l\u2019expertise que vous m\u00E9ritez.",
+      "Lawen Dentistry combine la dentisterie g\u00E9n\u00E9rale compl\u00E8te et les traitements cosm\u00E9tiques et restaurateurs avanc\u00E9s, offrant des soins personnalis\u00E9s et empreints de compassion pour les patients de tous \u00E2ges \u00E0 nos deux emplacements d\u2019Halifax.",
+    specialist: "Docteur en chirurgie dentaire (DDS)",
+    bio1: "Le Dr Daniel Lawen est docteur en chirurgie dentaire et fondateur de Lawen Dentistry \u00E0 Halifax, Nouvelle-\u00C9cosse. En tant que fournisseur Invisalign Diamond+, il fait partie des praticiens d\u2019aligneurs transparents les plus exp\u00E9riment\u00E9s au pays.",
+    bio2: "Le Dr Lawen est fier membre de l\u2019American Academy of Clear Aligners et de l\u2019Academy of General Dentistry. Son engagement envers la formation continue et les techniques avanc\u00E9es garantit aux patients les plus hautes normes de soins dans toutes les disciplines dentaires.",
+    bio3: "Des nettoyages de routine et soins pr\u00E9ventifs aux proc\u00E9dures restauratrices complexes et transformations cosm\u00E9tiques, le Dr Lawen et son \u00E9quipe se consacrent \u00E0 cr\u00E9er des sourires sains et confiants dans un environnement chaleureux et accueillant.",
     statPatients: "Patients trait\u00E9s",
-    statCertified: "M\u00E9decin certifi\u00E9",
+    statCertified: "Fournisseur Diamond+",
     statRating: "\u00C9valuation des patients",
     valuesTitle: "Nos valeurs",
     valuesSubtitle:
-      "Soins m\u00E9dicaux et traitements m\u00E9dico-esth\u00E9tiques con\u00E7us avec votre vie priv\u00E9e, votre confort et votre bien-\u00EAtre au c\u0153ur de tout ce que nous faisons.",
+      "Des soins dentaires con\u00E7us avec votre confort, votre sant\u00E9 et votre confiance au c\u0153ur de tout ce que nous faisons.",
     valuePatientCentered: "Centr\u00E9 sur le patient",
     valuePatientCenteredDesc:
       "Soins personnalis\u00E9s pour chaque membre de la famille.",
     valueCompassionate: "Bienveillant",
     valueCompassionateDesc: "Approche compr\u00E9hensive et soutenante.",
     valueAllAges: "Tous les \u00E2ges",
-    valueAllAgesDesc: "Des nouveau-n\u00E9s aux a\u00EEn\u00E9s.",
+    valueAllAgesDesc: "Des enfants aux a\u00EEn\u00E9s.",
     valueExcellence: "Excellence",
-    valueExcellenceDesc: "Les plus hautes normes m\u00E9dicales.",
+    valueExcellenceDesc: "Les plus hautes normes dentaires.",
     inclusiveTitle: "Soins inclusifs",
     inclusiveDesc:
-      "Cette clinique offre fi\u00E8rement des soins s\u00E9curitaires, respectueux et pleinement inclusifs pour tous les membres de la communaut\u00E9 LGBTQIA2S+.",
+      "Lawen Dentistry offre fi\u00E8rement des soins s\u00E9curitaires, respectueux et pleinement inclusifs pour tous les membres de notre communaut\u00E9.",
     certBadge: "Certifi\u00E9 et reconnu",
-    certTitle: "Reconnu par les principales organisations m\u00E9dicales",
+    certTitle: "Reconnu par les principales organisations dentaires",
     certSubtitle:
-      "L\u2019engagement in\u00E9branlable du Dr\u00A0Laurent envers l\u2019excellence est valid\u00E9 par des institutions de sant\u00E9 prestigieuses \u00E0 travers le monde.",
-    certObesityCanada:
-      "Certifi\u00E9 en excellence de la gestion du poids.",
-    certCalibre:
-      "Reconnu pour la qualit\u00E9 des normes de soins de sant\u00E9.",
-    certWorldlink:
-      "Partenaire de confiance du r\u00E9seau m\u00E9dical mondial.",
+      "L\u2019engagement du Dr Lawen envers l\u2019excellence est valid\u00E9 par des institutions dentaires prestigieuses et des organisations professionnelles.",
+    certAACA: "Membre de l\u2019American Academy of Clear Aligners.",
+    certAGD: "Membre de l\u2019Academy of General Dentistry.",
+    certInvisalign: "Fournisseur Invisalign Diamond+.",
     certLabel: "Certifi\u00E9",
     ctaTitle: "Pr\u00EAt \u00E0 commencer votre",
-    ctaHighlight: "parcours bien-\u00EAtre\u00A0?",
+    ctaHighlight: "parcours sourire\u00A0?",
     ctaDesc:
-      "R\u00E9servez votre rendez-vous d\u00E8s aujourd\u2019hui et d\u00E9couvrez des soins personnalis\u00E9s qui vous placent au premier plan.",
+      "R\u00E9servez votre rendez-vous d\u00E8s aujourd\u2019hui et d\u00E9couvrez des soins dentaires personnalis\u00E9s qui vous placent au premier plan.",
     ctaButton: "R\u00E9server votre rendez-vous",
   },
 };
@@ -134,16 +131,16 @@ export function AboutContent() {
 
   const certifications = [
     {
-      name: "Obesity Canada",
-      desc: c.certObesityCanada,
+      name: "American Academy of Clear Aligners",
+      desc: c.certAACA,
     },
     {
-      name: "Calibre",
-      desc: c.certCalibre,
+      name: "Academy of General Dentistry",
+      desc: c.certAGD,
     },
     {
-      name: "Worldlink Medical",
-      desc: c.certWorldlink,
+      name: "Invisalign Diamond+",
+      desc: c.certInvisalign,
     },
   ];
 
@@ -170,15 +167,15 @@ export function AboutContent() {
           </div>
         </section>
 
-        {/* About Dr. Laurent */}
+        {/* About Dr. Lawen */}
         <section className="py-24 bg-cream">
           <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <FadeIn>
               <div className="relative">
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-navy/10">
                   <img
-                    src="https://drlaurentmedecineprivee.ca/assets/dr-laurent-new-D1TM1Y8l.jpg"
-                    alt="Dr. Jean-Baptiste Laurent"
+                    src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop"
+                    alt="Dr. Daniel Lawen, DDS"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -191,7 +188,7 @@ export function AboutContent() {
                   {c.specialist}
                 </p>
                 <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-navy mb-6">
-                  Dr. Jean-Baptiste Laurent
+                  Dr. Daniel Lawen, DDS
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>{c.bio1}</p>
@@ -201,7 +198,7 @@ export function AboutContent() {
                 <div className="flex items-center gap-6 mt-8">
                   <div className="text-center">
                     <div className="font-heading text-2xl font-bold text-gold">
-                      500+
+                      1000+
                     </div>
                     <div className="text-xs text-muted-foreground">
                       {c.statPatients}
@@ -210,7 +207,7 @@ export function AboutContent() {
                   <div className="w-px h-10 bg-border" />
                   <div className="text-center">
                     <div className="font-heading text-2xl font-bold text-gold">
-                      Board
+                      Diamond+
                     </div>
                     <div className="text-xs text-muted-foreground">
                       {c.statCertified}

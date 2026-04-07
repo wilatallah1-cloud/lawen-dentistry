@@ -36,8 +36,8 @@ export function ChatWidget() {
         ctaButtonColor="#D4A843"
         ctaButtonTextColor="#1B2A4A"
         baseBgColor="#FAF8F5"
-        title="Clinique Dr. Laurent"
-        chatFirstMessage="Bonjour! Bienvenue à la Clinique Dr. Laurent — Médecine Privée & Esthétique. Comment puis-je vous aider aujourd'hui?"
+        title="Lawen Dentistry"
+        chatFirstMessage="Hello! Welcome to Lawen Dentistry — your Halifax dental care team. How can we help you today? / Bonjour! Bienvenue chez Lawen Dentistry. Comment puis-je vous aider aujourd'hui?"
         chatPlaceholder="Tapez votre message... / Type your message..."
         chatEmptyMessage="Commencez une conversation / Start a conversation"
       />

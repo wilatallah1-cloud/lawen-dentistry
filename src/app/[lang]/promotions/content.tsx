@@ -3,7 +3,7 @@
 import { Navbar } from "@/components/navbar";
 import { FooterSection } from "@/components/sections/footer";
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/motion";
-import { Calendar, Tag, Clock } from "lucide-react";
+import { Calendar, Tag, Clock, Sparkles, Star, Smile } from "lucide-react";
 import Link from "@/components/locale-link";
 import { useLocale } from "@/lib/locale";
 import { getTranslations } from "@/lib/translations";
@@ -14,59 +14,65 @@ const promoContent = {
     heroTitle: "Current",
     heroHighlight: "Promotions",
     heroDesc:
-      "Take advantage of our exclusive offers on premium aesthetic treatments. Quality care at exceptional prices.",
-    lipolysisTitle: "Lipolysis",
-    validUntil: "Valid until Easter 2026",
-    colArea: "Treatment Area",
-    colRegular: "Regular Price",
-    colPromo: "Promo Price",
-    learnMore: "Learn more about lipolysis treatments",
+      "Take advantage of our exclusive dental offers. Quality care at exceptional prices to keep your smile healthy and bright.",
+    promos: [
+      {
+        icon: Smile,
+        title: "Free Invisalign Consultation",
+        desc: "Thinking about straightening your smile? Book a complimentary Invisalign consultation with Dr. Lawen, Diamond+ Invisalign Provider. Includes a digital scan and personalized treatment overview.",
+        validity: "Ongoing",
+      },
+      {
+        icon: Sparkles,
+        title: "New Patient Special",
+        desc: "Welcome to Lawen Dentistry! New patients receive a comprehensive exam, digital x-rays, and a professional cleaning at a special introductory rate. Call for details.",
+        validity: "Limited time",
+      },
+      {
+        icon: Star,
+        title: "Teeth Whitening Bundle",
+        desc: "Brighten your smile with our professional whitening bundle. Get in-office whitening plus a take-home maintenance kit at a discounted package price. Ask us for details.",
+        validity: "While supplies last",
+      },
+    ],
     ctaTitle: "Ready to",
     ctaHighlight: "Book?",
-    ctaDesc: "Contact us today to take advantage of these limited-time offers.",
+    ctaDesc: "Contact us today to take advantage of these limited-time dental offers.",
     ctaBook: "Book Now",
     ctaPricing: "View All Prices",
-    promos: [
-      { area: "Chin", original: "$600", promo: "$510" },
-      { area: "Arms (both)", original: "$700", promo: "$595" },
-      { area: "Saddlebags", original: "$800", promo: "$680" },
-      { area: "Thighs (both)", original: "$900", promo: "$765" },
-      { area: "Full abdomen", original: "$900", promo: "$765" },
-      { area: "Half abdomen", original: "$600", promo: "$510" },
-      { area: "Love handles", original: "$500", promo: "$425" },
-      { area: "Calf or knee", original: "$700", promo: "$595" },
-      { area: "Back fat", original: "$700", promo: "$595" },
-    ],
   },
   fr: {
     badge: "Offres \u00E0 dur\u00E9e limit\u00E9e",
     heroTitle: "Promotions",
     heroHighlight: "en cours",
     heroDesc:
-      "Profitez de nos offres exclusives sur les traitements esth\u00E9tiques de qualit\u00E9. Des soins d\u2019excellence \u00E0 des prix exceptionnels.",
-    lipolysisTitle: "Lipolyse",
-    validUntil: "Valide jusqu\u2019\u00E0 P\u00E2ques 2026",
-    colArea: "Zone de traitement",
-    colRegular: "Prix r\u00E9gulier",
-    colPromo: "Prix promo",
-    learnMore: "En savoir plus sur les traitements de lipolyse",
+      "Profitez de nos offres dentaires exclusives. Des soins de qualit\u00E9 \u00E0 des prix exceptionnels pour garder votre sourire sain et \u00E9clatant.",
+    promos: [
+      {
+        icon: Smile,
+        title: "Consultation Invisalign gratuite",
+        desc: "Vous pensez \u00E0 aligner votre sourire\u00A0? R\u00E9servez une consultation Invisalign gratuite avec le Dr Lawen, fournisseur Invisalign Diamond+. Comprend un scan num\u00E9rique et un aper\u00E7u personnalis\u00E9 du traitement.",
+        validity: "En cours",
+      },
+      {
+        icon: Sparkles,
+        title: "Offre nouveau patient",
+        desc: "Bienvenue chez Lawen Dentistry\u00A0! Les nouveaux patients b\u00E9n\u00E9ficient d\u2019un examen complet, de radiographies num\u00E9riques et d\u2019un nettoyage professionnel \u00E0 un tarif de lancement sp\u00E9cial. Appelez pour d\u00E9tails.",
+        validity: "Dur\u00E9e limit\u00E9e",
+      },
+      {
+        icon: Star,
+        title: "Forfait blanchiment",
+        desc: "Illuminez votre sourire avec notre forfait blanchiment professionnel. Blanchiment en cabinet plus un kit d\u2019entretien \u00E0 domicile \u00E0 un prix forfaitaire r\u00E9duit. Demandez-nous les d\u00E9tails.",
+        validity: "Jusqu\u2019\u00E0 \u00E9puisement des stocks",
+      },
+    ],
     ctaTitle: "Pr\u00EAt \u00E0",
     ctaHighlight: "r\u00E9server\u00A0?",
     ctaDesc:
-      "Contactez-nous d\u00E8s aujourd\u2019hui pour profiter de ces offres \u00E0 dur\u00E9e limit\u00E9e.",
+      "Contactez-nous d\u00E8s aujourd\u2019hui pour profiter de ces offres dentaires \u00E0 dur\u00E9e limit\u00E9e.",
     ctaBook: "R\u00E9server",
     ctaPricing: "Voir tous les tarifs",
-    promos: [
-      { area: "Menton", original: "$600", promo: "$510" },
-      { area: "Bras (les deux)", original: "$700", promo: "$595" },
-      { area: "Culotte de cheval", original: "$800", promo: "$680" },
-      { area: "Cuisses (les deux)", original: "$900", promo: "$765" },
-      { area: "Abdomen complet", original: "$900", promo: "$765" },
-      { area: "Demi-abdomen", original: "$600", promo: "$510" },
-      { area: "Poign\u00E9es d\u2019amour", original: "$500", promo: "$425" },
-      { area: "Mollet ou genou", original: "$700", promo: "$595" },
-      { area: "Gras du dos", original: "$700", promo: "$595" },
-    ],
   },
 };
 
@@ -98,62 +104,36 @@ export function PromotionsContent() {
           </div>
         </section>
 
-        {/* Lipolysis Promo */}
+        {/* Promotions Cards */}
         <section className="py-24 bg-cream">
           <div className="max-w-4xl mx-auto px-6">
-            <FadeIn className="mb-10">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 rounded-lg bg-gold/10">
-                  <Tag className="w-5 h-5 text-gold" />
-                </div>
-                <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-navy">
-                  {c.lipolysisTitle}
-                </h2>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Clock className="w-4 h-4 text-gold" />
-                {c.validUntil}
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={0.1}>
-              <div className="bg-white rounded-2xl border border-border/50 overflow-hidden shadow-sm">
-                <div className="grid grid-cols-3 px-5 py-3 bg-navy text-white text-sm font-medium">
-                  <span>{c.colArea}</span>
-                  <span className="text-center">{c.colRegular}</span>
-                  <span className="text-right">{c.colPromo}</span>
-                </div>
-                {c.promos.map((item, i) => (
-                  <div
-                    key={item.area}
-                    className={`grid grid-cols-3 px-5 py-4 items-center ${
-                      i !== c.promos.length - 1
-                        ? "border-b border-border/30"
-                        : ""
-                    } hover:bg-cream/50 transition-colors`}
-                  >
-                    <span className="text-sm text-navy font-medium">
-                      {item.area}
-                    </span>
-                    <span className="text-sm text-muted-foreground line-through text-center">
-                      {item.original}
-                    </span>
-                    <span className="text-sm font-bold text-gold text-right">
-                      {item.promo}
-                    </span>
+            <StaggerChildren className="space-y-6" staggerDelay={0.1}>
+              {c.promos.map((promo) => (
+                <StaggerItem key={promo.title}>
+                  <div className="p-8 rounded-2xl bg-white border border-border/50 hover:border-gold/30 hover:shadow-md transition-all duration-500">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 rounded-xl bg-gold/10 shrink-0">
+                        <promo.icon className="w-6 h-6 text-gold" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-3">
+                          <h3 className="font-heading text-xl font-semibold text-navy">
+                            {promo.title}
+                          </h3>
+                        </div>
+                        <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                          {promo.desc}
+                        </p>
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <Clock className="w-4 h-4 text-gold" />
+                          {promo.validity}
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                ))}
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={0.2} className="mt-8">
-              <Link
-                href="/medical-aesthetic"
-                className="text-gold text-sm font-medium hover:underline"
-              >
-                {c.learnMore} &rarr;
-              </Link>
-            </FadeIn>
+                </StaggerItem>
+              ))}
+            </StaggerChildren>
           </div>
         </section>
 

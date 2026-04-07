@@ -170,11 +170,11 @@ export function ServicePageLayout({
                     {t.service.bookConsultation}
                   </Link>
                   <Link
-                    href="tel:+15145003422"
+                    href="tel:+19024241888"
                     className="flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-6 py-4 rounded-full text-sm transition-all duration-300 hover:bg-white/15"
                   >
                     <Phone className="w-4 h-4" />
-                    Call (514) 500-3422
+                    Call (902) 424-1888
                   </Link>
                 </div>
               </FadeIn>

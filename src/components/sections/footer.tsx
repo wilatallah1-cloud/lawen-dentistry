@@ -25,7 +25,7 @@ export function FooterSection() {
     { label: t.footer.legal, href: "/legal-notice" },
     { label: t.footer.privacy, href: "/privacy-policy" },
     { label: t.footer.terms, href: "/terms-of-use" },
-    { label: t.footer.conditions, href: "/terms-of-sale" },
+    { label: t.footer.conditions, href: "/accessibility" },
   ];
 
   return (
@@ -38,7 +38,7 @@ export function FooterSection() {
               <div className="mb-4">
                 <img
                   src="/logo.png"
-                  alt="Dr. Laurent - Médecine Privée & Esthétique"
+                  alt="Lawen Dentistry - Halifax, NS"
                   className="h-28 w-auto brightness-0 invert"
                 />
               </div>
@@ -70,12 +70,26 @@ export function FooterSection() {
                   <div className="p-2 rounded-lg bg-gold/10">
                     <MapPin className="w-4 h-4 text-gold" />
                   </div>
-                  <h4 className="font-semibold text-sm">{t.footer.visitUs}</h4>
+                  <h4 className="font-semibold text-sm">Spring Garden</h4>
                 </div>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  4072 Le Corbusier
+                  275-5991 Spring Garden Rd
                   <br />
-                  Laval, QC H7L 5R2
+                  Halifax, NS B3H 1Y6
+                </p>
+              </div>
+
+              <div className="p-5 rounded-xl bg-white/5 border border-white/10">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="p-2 rounded-lg bg-gold/10">
+                    <MapPin className="w-4 h-4 text-gold" />
+                  </div>
+                  <h4 className="font-semibold text-sm">Mumford Road</h4>
+                </div>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  101-7037 Mumford Road
+                  <br />
+                  Halifax, NS B3L 2J1
                 </p>
               </div>
 
@@ -87,27 +101,16 @@ export function FooterSection() {
                   <h4 className="font-semibold text-sm">{t.footer.callUs}</h4>
                 </div>
                 <Link
-                  href="tel:+15145003422"
-                  className="text-white/60 text-sm hover:text-gold transition-colors"
+                  href="tel:+19024241888"
+                  className="text-white/60 text-sm hover:text-gold transition-colors block mb-1"
                 >
-                  (514) 500-3422
+                  (902) 424-1888
                 </Link>
-              </div>
-
-              <div className="p-5 rounded-xl bg-white/5 border border-white/10">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-2 rounded-lg bg-gold/10">
-                    <Mail className="w-4 h-4 text-gold" />
-                  </div>
-                  <h4 className="font-semibold text-sm">{t.footer.emailUs}</h4>
-                </div>
                 <Link
-                  href="mailto:info@drlaurentmedecineetesthetique.com"
-                  className="text-white/60 text-sm hover:text-gold transition-colors break-all"
+                  href="tel:+19024061888"
+                  className="text-white/60 text-sm hover:text-gold transition-colors block"
                 >
-                  info@drlaurentmedecine
-                  <wbr />
-                  etesthetique.com
+                  (902) 406-1888
                 </Link>
               </div>
 
@@ -132,14 +135,14 @@ export function FooterSection() {
         <FadeIn delay={0.1}>
           <div className="rounded-2xl overflow-hidden border border-white/10 mb-10 h-[200px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.5!2d-73.75!3d45.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s4072+Boulevard+Le+Corbusier%2C+Laval%2C+QC+H7L+5R2!5e0!3m2!1sen!2sca!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.5!2d-63.58!3d44.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s5991+Spring+Garden+Road%2C+Halifax%2C+NS!5e0!3m2!1sen!2sca!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) saturate(0.3)" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Clinic Location"
+              title="Lawen Dentistry - Spring Garden Location"
             />
           </div>
         </FadeIn>
@@ -160,7 +163,7 @@ export function FooterSection() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-xs">
-            &copy; {new Date().getFullYear()} Dr. Laurent Médecine Privée
+            &copy; {new Date().getFullYear()} Lawen Dentistry. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             {footerLinks.map((link) => (

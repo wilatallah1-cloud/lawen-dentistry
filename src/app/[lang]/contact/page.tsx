@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ContactContent } from "./content";
 
 export const metadata: Metadata = {
-  title: "Contact | Dr. Laurent - Médecine Privée",
+  title: "Contact | Lawen Dentistry - Halifax, NS",
   description:
-    "Contact Dr. Laurent's clinic in Laval. Schedule appointments, ask questions, or visit us at 4072 Boul. le Corbusier, Laval, QC H7L 5R2.",
+    "Contact Lawen Dentistry in Halifax. Schedule appointments, ask questions, or visit us at 275-5991 Spring Garden Road, Halifax, NS B3H 1Y6.",
 };
 
 export default function Contact() {

@@ -7,40 +7,40 @@ import { getTranslations } from "@/lib/translations";
 
 const testimonials = [
   {
-    name: "Marie-Claire D.",
-    treatment: "Dermal Fillers",
+    name: "Talie T.",
+    treatment: "General Dentistry",
     rating: 5,
-    text: "Dr. Laurent took the time to understand exactly what I wanted. The results are so natural—my friends just think I look well-rested. Absolutely impeccable service.",
+    text: "Dr. Lawen really makes you forget you're at the big scary dentist office. The entire team is warm, welcoming, and incredibly skilled.",
   },
   {
-    name: "Jean-Pierre T.",
-    treatment: "Weight Management",
+    name: "Amara H.",
+    treatment: "Invisalign",
     rating: 5,
-    text: "After years of struggling, Dr. Laurent's personalized program finally worked. Down 30 lbs and feeling incredible. The follow-up care is outstanding.",
+    text: "The Invisalign process is so streamlined they have it down to a science. Couldn't be happier with my results and the entire experience.",
   },
   {
-    name: "Sophie L.",
-    treatment: "Family Medicine",
+    name: "Lacey C.",
+    treatment: "Invisalign",
     rating: 5,
-    text: "Finally found a family doctor who truly listens. The clinic is beautiful, wait times are minimal, and the care is exceptional. My whole family goes here now.",
+    text: "I just finished my Invisalign treatment and can't say enough great things. My new smile makes me feel more confident and so happy!",
   },
   {
-    name: "Alexandre M.",
-    treatment: "Botox",
+    name: "Connor M.",
+    treatment: "Long-term Patient",
     rating: 5,
-    text: "I was nervous about my first treatment, but Dr. Laurent explained everything clearly. Minimal discomfort, incredible results. The clinic feels like a luxury spa.",
+    text: "Outstanding care and customer service! I have been going for 7 years and they have always been incredible. Highly recommend to everyone.",
   },
   {
-    name: "Nathalie B.",
-    treatment: "Laser Treatment",
+    name: "Sarah W.",
+    treatment: "Cosmetic Dentistry",
     rating: 5,
-    text: "The laser treatment completely transformed my skin. Dr. Laurent's expertise and the state-of-the-art equipment made all the difference. Highly recommended.",
+    text: "Dr. Lawen and his team transformed my smile completely. The attention to detail and care throughout the process was exceptional.",
   },
   {
-    name: "David R.",
-    treatment: "Body Contouring",
+    name: "Michael R.",
+    treatment: "Emergency Care",
     rating: 5,
-    text: "Professional, discreet, and incredibly effective. Dr. Laurent's approach to body contouring is artistic—natural results that boosted my confidence enormously.",
+    text: "Had a dental emergency and they got me in right away. Professional, compassionate, and thorough. This is what great dental care looks like.",
   },
 ];
 

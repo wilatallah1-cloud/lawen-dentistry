@@ -20,57 +20,57 @@ const faqContent = {
     heroTitle: "Your Questions",
     heroHighlight: "Answered",
     heroDesc:
-      "Find answers to common questions about our services, treatments, and what to expect at our clinic.",
+      "Find answers to common questions about our dental services, treatments, and what to expect at Lawen Dentistry.",
     stillTitle: "Still Have Questions?",
     stillDesc:
-      "We\u2019re here to help! Contact us for personalized answers to your specific questions about our services and treatments.",
+      "We\u2019re here to help! Contact us for personalized answers to your specific questions about our dental services and treatments.",
     contactUs: "Contact Us",
-    callLabel: "Call (514) 500-3422",
+    callLabel: "Call (902) 424-1888",
     ctaTitle: "Ready to Start Your",
-    ctaHighlight: "Journey?",
+    ctaHighlight: "Smile Journey?",
     ctaDesc:
-      "Book your appointment today and experience personalized care that puts you first.",
+      "Book your appointment today and experience personalized dental care that puts you first.",
     ctaButton: "Book Your Appointment",
     faqs: [
       {
-        q: "What services does Dr. Laurent's clinic offer?",
-        a: "Our clinic offers two main categories of services: Private Healthcare (family medicine, consultations, minor emergencies, hormone therapy, weight management, mental health) and Medical Aesthetic (injectables, fillers, laser treatments, body contouring, penile enhancement, and more). Visit our Medical Aesthetic and Medical Services pages for full details.",
+        q: "What services does Lawen Dentistry offer?",
+        a: "We offer over 15 specialized dental services including Invisalign, cosmetic dentistry, dental implants, teeth whitening, children's dentistry, sedation dentistry, emergency care, periodontics, endodontics, TMJ treatment, wisdom teeth removal, and more.",
       },
       {
         q: "How do I book an appointment?",
-        a: "You can book an appointment by calling us at (514) 500-3422, emailing info@drlaurentmedecineetesthetique.com, or using the contact form on our website. We'll get back to you within 24 hours to confirm your appointment.",
+        a: "You can book by calling our Spring Garden location at (902) 424-1888, our Mumford Road location at (902) 406-1888, or by emailing info@ourdentist.ca. We're happy to find a time that works for your schedule.",
       },
       {
-        q: "Are consultations confidential?",
-        a: "Absolutely. All consultations and treatments at our clinic are 100% confidential. We maintain the highest standards of patient privacy in compliance with Quebec healthcare regulations.",
+        q: "What are your office hours and locations?",
+        a: "Both locations are open Monday through Friday, 8:00 AM to 5:00 PM. Spring Garden: 275-5991 Spring Garden Road, Halifax, NS. Mumford Road: 101-7037 Mumford Road, Halifax, NS. We are closed on weekends.",
       },
       {
-        q: "What should I expect during my first visit?",
-        a: "During your first visit, you'll complete a brief medical history form. Dr. Laurent will then conduct a thorough assessment, discuss your concerns and goals, and develop a personalized treatment plan. The consultation is a safe, judgment-free environment.",
+        q: "What makes Dr. Lawen a Diamond+ Invisalign Provider?",
+        a: "Diamond+ is one of the highest tiers in the Invisalign provider program, awarded based on the number and quality of Invisalign cases completed. This means Dr. Lawen has extensive experience delivering outstanding clear aligner results.",
       },
       {
-        q: "How experienced is Dr. Laurent?",
-        a: "Dr. Laurent is a board-certified family medicine specialist with extensive training in medical aesthetics. He is certified by Obesity Canada, Calibre, and Worldlink Medical, and has treated over 500 patients with consistently high satisfaction ratings.",
+        q: "Do you accept dental insurance?",
+        a: "Yes, we work with most major dental insurance providers. Our team will help you understand your coverage and maximize your benefits. Contact us for specific insurance questions.",
       },
       {
-        q: "Do you offer payment plans for treatments?",
-        a: "Please contact our clinic directly to discuss payment options. We strive to make our treatments as accessible as possible and will work with you to find a suitable arrangement.",
+        q: "Is sedation dentistry safe?",
+        a: "Absolutely. We offer safe, effective sedation options for patients who experience dental anxiety. Dr. Lawen and the team monitor you throughout the entire procedure to ensure your comfort and safety.",
       },
       {
-        q: "What are your clinic hours and location?",
-        a: "Our clinic is located at 4072 Boul. le Corbusier, Laval, QC H7L 5R2. We are open Monday through Friday from 9:00 AM to 5:00 PM. Saturday and Sunday we are closed.",
+        q: "Do you offer emergency dental appointments?",
+        a: "Yes. If you have a dental emergency such as severe pain, a broken tooth, or trauma, call us immediately at (902) 424-1888. We prioritize urgent cases and will work to see you as quickly as possible.",
       },
       {
-        q: "Are aesthetic procedures safe?",
-        a: "Yes. All aesthetic procedures at our clinic are performed by Dr. Laurent using FDA-approved products in a sterile medical environment. Safety is our top priority, and we follow strict medical protocols for every treatment.",
+        q: "What should I expect at my first visit?",
+        a: "Your first visit includes a comprehensive examination, digital x-rays, and a discussion of your dental health goals. We take time to listen to your concerns and create a personalized treatment plan. Expect a warm, pressure-free experience.",
       },
       {
-        q: "How long do aesthetic results last?",
-        a: "Results vary depending on the treatment. Botox typically lasts 3-6 months, dermal fillers 6-18 months, and laser treatments can provide long-lasting results. Dr. Laurent will discuss expected duration during your consultation.",
+        q: "Do you see children and families?",
+        a: "Yes! We welcome patients of all ages, from young children to seniors. Our team is experienced in making children feel comfortable and building positive dental habits from an early age.",
       },
       {
-        q: "Do you offer virtual consultations?",
-        a: "Please contact us to inquire about virtual consultation availability. Some initial assessments can be conducted remotely, though most treatments require an in-person visit.",
+        q: "What technology do you use?",
+        a: "We use advanced dental technology including iTero digital scanners for precise Invisalign treatment planning, 3D panoramic x-rays, and modern equipment to ensure accurate diagnoses and comfortable treatments.",
       },
     ],
   },
@@ -79,57 +79,57 @@ const faqContent = {
     heroTitle: "Vos questions",
     heroHighlight: "r\u00E9pondues",
     heroDesc:
-      "Trouvez les r\u00E9ponses aux questions fr\u00E9quentes sur nos services, traitements et ce \u00E0 quoi vous attendre dans notre clinique.",
+      "Trouvez les r\u00E9ponses aux questions fr\u00E9quentes sur nos services dentaires, traitements et ce \u00E0 quoi vous attendre chez Lawen Dentistry.",
     stillTitle: "D\u2019autres questions\u00A0?",
     stillDesc:
-      "Nous sommes l\u00E0 pour vous aider\u00A0! Contactez-nous pour des r\u00E9ponses personnalis\u00E9es \u00E0 vos questions sp\u00E9cifiques sur nos services et traitements.",
+      "Nous sommes l\u00E0 pour vous aider\u00A0! Contactez-nous pour des r\u00E9ponses personnalis\u00E9es \u00E0 vos questions sp\u00E9cifiques sur nos services et traitements dentaires.",
     contactUs: "Contactez-nous",
-    callLabel: "Appeler (514) 500-3422",
+    callLabel: "Appeler (902) 424-1888",
     ctaTitle: "Pr\u00EAt \u00E0 commencer votre",
-    ctaHighlight: "parcours\u00A0?",
+    ctaHighlight: "parcours sourire\u00A0?",
     ctaDesc:
-      "R\u00E9servez votre rendez-vous d\u00E8s aujourd\u2019hui et d\u00E9couvrez des soins personnalis\u00E9s qui vous placent au premier plan.",
+      "R\u00E9servez votre rendez-vous d\u00E8s aujourd\u2019hui et d\u00E9couvrez des soins dentaires personnalis\u00E9s qui vous placent au premier plan.",
     ctaButton: "R\u00E9server votre rendez-vous",
     faqs: [
       {
-        q: "Quels services offre la clinique du Dr\u00A0Laurent\u00A0?",
-        a: "Notre clinique offre deux grandes cat\u00E9gories de services\u00A0: Soins de sant\u00E9 priv\u00E9s (m\u00E9decine familiale, consultations, urgences mineures, hormonoth\u00E9rapie, gestion du poids, sant\u00E9 mentale) et Esth\u00E9tique m\u00E9dicale (injectables, comblement, traitements laser, remodelage corporel, augmentation p\u00E9nienne et plus). Consultez nos pages Esth\u00E9tique m\u00E9dicale et Services m\u00E9dicaux pour tous les d\u00E9tails.",
+        q: "Quels services offre Lawen Dentistry\u00A0?",
+        a: "Nous offrons plus de 15 services dentaires sp\u00E9cialis\u00E9s, dont Invisalign, la dentisterie cosm\u00E9tique, les implants dentaires, le blanchiment, la dentisterie pour enfants, la s\u00E9dation, les soins d\u2019urgence, la parodontie, l\u2019endodontie, le traitement ATM et plus encore.",
       },
       {
         q: "Comment puis-je prendre rendez-vous\u00A0?",
-        a: "Vous pouvez prendre rendez-vous en nous appelant au (514) 500-3422, en envoyant un courriel \u00E0 info@drlaurentmedecineetesthetique.com ou en utilisant le formulaire de contact sur notre site web. Nous vous r\u00E9pondrons dans les 24 heures pour confirmer votre rendez-vous.",
+        a: "Vous pouvez r\u00E9server en appelant notre emplacement Spring Garden au (902) 424-1888, notre emplacement Mumford Road au (902) 406-1888, ou en nous \u00E9crivant \u00E0 info@ourdentist.ca.",
       },
       {
-        q: "Les consultations sont-elles confidentielles\u00A0?",
-        a: "Absolument. Toutes les consultations et tous les traitements dans notre clinique sont 100\u00A0% confidentiels. Nous maintenons les plus hautes normes de confidentialit\u00E9 des patients, conform\u00E9ment \u00E0 la r\u00E9glementation qu\u00E9b\u00E9coise en mati\u00E8re de sant\u00E9.",
+        q: "Quels sont vos heures et emplacements\u00A0?",
+        a: "Les deux emplacements sont ouverts du lundi au vendredi, de 8h00 \u00E0 17h00. Spring Garden : 275-5991 Spring Garden Road, Halifax, NS. Mumford Road : 101-7037 Mumford Road, Halifax, NS. Ferm\u00E9 les fins de semaine.",
+      },
+      {
+        q: "Qu\u2019est-ce qui fait du Dr Lawen un fournisseur Invisalign Diamond+\u00A0?",
+        a: "Diamond+ est l\u2019un des plus hauts niveaux du programme Invisalign, attribu\u00E9 en fonction du nombre et de la qualit\u00E9 des cas trait\u00E9s. Cela signifie que le Dr Lawen poss\u00E8de une vaste exp\u00E9rience en aligneurs transparents.",
+      },
+      {
+        q: "Acceptez-vous les assurances dentaires\u00A0?",
+        a: "Oui, nous travaillons avec la plupart des grands fournisseurs d\u2019assurance dentaire. Notre \u00E9quipe vous aidera \u00E0 comprendre votre couverture et \u00E0 maximiser vos avantages.",
+      },
+      {
+        q: "La dentisterie sous s\u00E9dation est-elle s\u00E9curitaire\u00A0?",
+        a: "Absolument. Nous offrons des options de s\u00E9dation s\u00FBres et efficaces pour les patients anxieux. Le Dr Lawen et l\u2019\u00E9quipe vous surveillent tout au long de la proc\u00E9dure pour assurer votre confort et votre s\u00E9curit\u00E9.",
+      },
+      {
+        q: "Offrez-vous des rendez-vous dentaires d\u2019urgence\u00A0?",
+        a: "Oui. Si vous avez une urgence dentaire comme une douleur intense, une dent cass\u00E9e ou un traumatisme, appelez-nous imm\u00E9diatement au (902) 424-1888. Nous priorisons les cas urgents.",
       },
       {
         q: "\u00C0 quoi dois-je m\u2019attendre lors de ma premi\u00E8re visite\u00A0?",
-        a: "Lors de votre premi\u00E8re visite, vous remplirez un bref formulaire d\u2019antec\u00E9dents m\u00E9dicaux. Le Dr\u00A0Laurent effectuera ensuite une \u00E9valuation approfondie, discutera de vos pr\u00E9occupations et de vos objectifs, et \u00E9laborera un plan de traitement personnalis\u00E9. La consultation se d\u00E9roule dans un environnement s\u00E9curitaire et sans jugement.",
+        a: "Votre premi\u00E8re visite comprend un examen complet, des radiographies num\u00E9riques et une discussion sur vos objectifs de sant\u00E9 dentaire. Attendez-vous \u00E0 une exp\u00E9rience chaleureuse et sans pression.",
       },
       {
-        q: "Quelle est l\u2019exp\u00E9rience du Dr\u00A0Laurent\u00A0?",
-        a: "Le Dr\u00A0Laurent est un sp\u00E9cialiste certifi\u00E9 en m\u00E9decine familiale avec une formation approfondie en esth\u00E9tique m\u00E9dicale. Il est certifi\u00E9 par Obesity Canada, Calibre et Worldlink Medical, et a trait\u00E9 plus de 500 patients avec des taux de satisfaction constamment \u00E9lev\u00E9s.",
+        q: "Recevez-vous les enfants et les familles\u00A0?",
+        a: "Oui\u00A0! Nous accueillons les patients de tous \u00E2ges, des jeunes enfants aux a\u00EEn\u00E9s. Notre \u00E9quipe est exp\u00E9riment\u00E9e pour mettre les enfants \u00E0 l\u2019aise.",
       },
       {
-        q: "Offrez-vous des plans de paiement pour les traitements\u00A0?",
-        a: "Veuillez communiquer directement avec notre clinique pour discuter des options de paiement. Nous nous effor\u00E7ons de rendre nos traitements aussi accessibles que possible et travaillerons avec vous pour trouver une entente adapt\u00E9e.",
-      },
-      {
-        q: "Quelles sont les heures d\u2019ouverture et l\u2019emplacement de la clinique\u00A0?",
-        a: "Notre clinique est situ\u00E9e au 4072, boul. Le Corbusier, Laval, QC H7L 5R2. Nous sommes ouverts du lundi au vendredi de 9\u00A0h \u00E0 17\u00A0h. Samedi et dimanche, nous sommes ferm\u00E9s.",
-      },
-      {
-        q: "Les proc\u00E9dures esth\u00E9tiques sont-elles s\u00E9curitaires\u00A0?",
-        a: "Oui. Toutes les proc\u00E9dures esth\u00E9tiques de notre clinique sont r\u00E9alis\u00E9es par le Dr\u00A0Laurent avec des produits approuv\u00E9s par la FDA dans un environnement m\u00E9dical st\u00E9rile. La s\u00E9curit\u00E9 est notre priorit\u00E9 absolue et nous suivons des protocoles m\u00E9dicaux stricts pour chaque traitement.",
-      },
-      {
-        q: "Combien de temps durent les r\u00E9sultats esth\u00E9tiques\u00A0?",
-        a: "Les r\u00E9sultats varient selon le traitement. Le Botox dure g\u00E9n\u00E9ralement de 3 \u00E0 6 mois, le comblement dermique de 6 \u00E0 18 mois, et les traitements laser peuvent offrir des r\u00E9sultats durables. Le Dr\u00A0Laurent discutera de la dur\u00E9e pr\u00E9vue lors de votre consultation.",
-      },
-      {
-        q: "Offrez-vous des consultations virtuelles\u00A0?",
-        a: "Veuillez nous contacter pour vous renseigner sur la disponibilit\u00E9 des consultations virtuelles. Certaines \u00E9valuations initiales peuvent \u00EAtre effectu\u00E9es \u00E0 distance, bien que la plupart des traitements n\u00E9cessitent une visite en personne.",
+        q: "Quelle technologie utilisez-vous\u00A0?",
+        a: "Nous utilisons une technologie dentaire avanc\u00E9e, notamment les scanners num\u00E9riques iTero pour la planification pr\u00E9cise des traitements Invisalign, les radiographies panoramiques 3D et des \u00E9quipements modernes.",
       },
     ],
   },
@@ -205,7 +205,7 @@ export function FaqContent() {
                   {c.contactUs}
                 </Link>
                 <Link
-                  href="tel:+15145003422"
+                  href="tel:+19024241888"
                   className="inline-flex items-center justify-center gap-2 bg-navy text-white px-6 py-4 rounded-full text-sm transition-all duration-300 hover:bg-navy/90"
                 >
                   <Phone className="w-4 h-4" />
