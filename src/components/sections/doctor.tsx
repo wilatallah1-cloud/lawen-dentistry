@@ -17,10 +17,10 @@ export function DoctorSection() {
               {/* Image */}
               <div className="relative h-[400px] md:h-[520px]">
                 <div
-                  className="absolute inset-0 bg-cover bg-[center_15%]"
+                  className="absolute inset-0 bg-cover bg-top"
                   style={{
                     backgroundImage:
-                      "url('/dr-lawen.webp')",
+                      "url('/dr-lawen.png')",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-navy-dark/80 hidden md:block" />

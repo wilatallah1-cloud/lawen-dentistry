@@ -37,7 +37,7 @@ export function ChatWidget() {
         ctaButtonTextColor="#1B2A4A"
         baseBgColor="#FAF8F5"
         title="Lawen Dentistry"
-        chatFirstMessage="Hello! Welcome to Lawen Dentistry — your Halifax dental care team. How can we help you today?"
+        chatFirstMessage="Hello! I'm the AI assistant at Lawen Dentistry. How can I help you today?"
         chatPlaceholder="Type your message..."
         chatEmptyMessage="Start a conversation"
       />
